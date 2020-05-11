@@ -20,7 +20,7 @@ services:
   reverse-proxy:
     image: nginx
     volumes:
-      - ./reverse-proxy/my.conf:/etc/nginx/conf.d/my.conf
+      - ./reverse-proxy/default.conf:/etc/nginx/conf.d/default.conf
       - ./reverse-proxy/index.html:/usr/share/nginx/html/index.html
     ports:
       - 80:80
